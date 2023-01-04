@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour
     {
         speed = 10.0f;
         xRange = 15f;
-        projectilePrefab = GameObject.Find("P_Food_Pizza");
     }
 
     private void Awake()
