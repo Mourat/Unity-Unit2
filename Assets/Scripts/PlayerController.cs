@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -39,7 +38,7 @@ public class PlayerController : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x, -xRange, xRange);
         
         transform.position = pos;
-        transform.Translate(_right * horizontalInput * TimeStep * speed);
+        transform.Translate(_right * (horizontalInput * TimeStep * speed));
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
